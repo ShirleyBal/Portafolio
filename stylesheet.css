@@ -55,7 +55,7 @@ body {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url("img/foto.jpg") no-repeat; /*mi imagen */
+    background: url("img/foto.jpg") no-repeat; 
     background-position: center;
     display: flex;
     align-items: center;
@@ -97,11 +97,9 @@ body {
 }
 
 .home-sci a {
-    /* display: inline-block; */
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    /* width: 40px; height: 40px;*/
     width: 50px;
     height: 50px;
     background: transparent;
@@ -117,7 +115,7 @@ body {
     margin: 30px 15px 30px 0;
 }
 .home-sci a img {
-    width: 60%; /* correccion de iconos */
+    width: 60%;
     height: 60%;
     object-fit: contain;
 }
@@ -181,7 +179,83 @@ body {
     line-height: 1.4;
     margin-bottom: 4rem;
 }
-
+/* skills */
+#services {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.sub-title span{
+    color: #0ef;
+}
+.container {
+    padding: 90%;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+                1px 1px 40px #0553b8f7
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}  
+.services-list a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef
+}
+.read:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+.services-list div:hover {
+    transform: translateY(-10px);
+}
+/* skills */
 @keyframes slideRight {
     0% {
         transform: translate(-100px);
