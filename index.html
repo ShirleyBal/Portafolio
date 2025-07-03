@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="http://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Portafolio</a>
 
         <nav class="navbar">
-            <a href="Home" style="--i:1" class="active">Home</a>
-            <a href="About" style="--i:2">About</a>
-            <a href="Skills" style="--i:3">Skill</a>
-            <a href="Project" style="--i:4">Portafolio</a>
-            <a href="Contact" style="--i:5">Contact</a>
+            <a href="#Home" style="--i:1" class="active">Home</a>
+            <a href="#About" style="--i:2">About</a>
+            <a href="#Skills" style="--i:3">Skill</a>
+            <a href="#Project" style="--i:4">Portafolio</a>
+            <a href="#Contact" style="--i:5">Contact</a>
         </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Shirley Balbuena</h1>
@@ -44,7 +44,7 @@
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="img/foto.jpg">
+            <img src="img/foto.jpg" alt="Foto4x4">
         </div>
         <div class="about-text">
             <h2>About<span>Me</span></h2>
@@ -67,7 +67,7 @@
     <section>
         <div class="services" id="services">
             <div class="contact"> 
-                <h1 class="sub-title">My <span>skills</span></h1>
+                <h1 class="sub-title">My <span>Technologies</span></h1>
                 <div class="services-list">
                     <div>
                         <i class="bx bx-code" style="color: #00eeff"></i>
@@ -75,7 +75,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda, repellat maiores 
                             autem atque sunt molestiae temporibus? Commodi repellendus eius odit harum doloremque adipisci! 
                             Deleniti sapiente aut voluptate itaque quibusdam!</p>
-                            <a href="#" class="read">lern more</a>
+                            <a href="#" class="read">learn more</a>
 
                     </div>
                     <div>
@@ -84,7 +84,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda, repellat maiores 
                             autem atque sunt molestiae temporibus? Commodi repellendus eius odit harum doloremque adipisci! 
                             Deleniti sapiente aut voluptate itaque quibusdam!</p>
-                            <a href="#" class="read">lern more</a>
+                            <a href="#" class="read">learn more</a>
                             
                     </div>
                     <div>
@@ -93,68 +93,98 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni assumenda, repellat maiores 
                             autem atque sunt molestiae temporibus? Commodi repellendus eius odit harum doloremque adipisci! 
                             Deleniti sapiente aut voluptate itaque quibusdam!</p>
-                            <a href="#" class="read">lern more</a>
+                            <a href="#" class="read">learn more</a>
                             
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
+
     <section>
-        <div id="portafolio" id="project"></div>
-            <div class="main-text" id="project"></div>
+        <div id="portafolio">
+            <div class="main-text">
                 <h2>Latest<span>Project</span></h2>
 
-                <div class="portafolio-content"></div>
-                    <div class="row"></div>
-                        <img src="img/pokemon.jpg">
-                        <div class="layer"></div>
+                <div class="portafolio-content">
+                    <div class="row">
+                        <img src="img/pokemon.jpg" alt="portada">
+                        <div class="layer">
                             <h5>Pokemon</h5>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sequi hic et delectus 
                                 nostrum rerum enim magni quos nisi suscipit explicabo iusto inventore, laudantium 
                                 quisquam possimus nesciunt cupiditate dolor nemo.</p>
 
-                                <a href="#"><i class='bx box-link-external' style="color: aliceblue"</a>
-                                    
-    </section>
+                                <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                        </div>
+                    </div>   
+                    
+                    <div class="portafolio-content">
+                        <div class="row">
+                        <img src="img/Tienda.png" alt="E-commerce Project">
+                            <div class="layer">
+                            <h5>E-commerce</h5>
+                            <p>Tienda online con carrito de compras, pasarela de pagos y panel de administración para 
+                                productos.</p>
+                            <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                            </div>
+                        </div>
+                    </div>
 
-    <section class="contact" id="contact">
-        <div class="contact-text"></div>
+                    <div class="portafolio-content">
+                        <div class="row">
+                        <img src="img/peliculas.png" alt="E-commerce Project">
+                            <div class="layer">
+                            <h5>E-commerce</h5>
+                            <p>Es una plataforma de peliculas</p>
+                            <a href="#"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <section id="contact" class="contact" >
+        <div class="contact-text">
         <h2>Contact<span>Me</span></h2>
         <h4>Let's work together</h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eos facere voluptate possimus, nulla 
             doloremque sapiente nisi itaque totam similique mollitia. Saepe, sunt perspiciatis adipisci pariatur 
             unde inventore porro fugiat.</p>
             <div class="contact-list">
-                <li class='bx bxs-send'><i><img src="img/send.png"></i>shiileybal@gmail.com</li>
-                <li class='bx bxs-send'><i><img src="img/tel.png">Tel</i>
+                <ul>
+                <li><img src="img/send.png" alt="send"> shiileybal@gmail.com</li>
+                <li><img src="img/tel.png" alt="tel"> Tel: ...</li>
+                </ul>
             </div>
-            <div class="contact.icons">
+            <div class="contact-icons">
                 <a href=""><img src="img/icons8-instagram-50.png" alt="Instagram"></a>
                 <a href=""><img src="img/icons8-whatsapp-50.png" alt="WhatsApp"></a>
                 <a href=""><img src="img/icons8-linkedin-50.png" alt="LinkedIn"></a>
             </div>
-
+            <a href="#"><i class='bx box-link-external' style="color: aliceblue"></i></a>
+        </div>
     <div class="contact-form">
          <form action="">
-            <input type="" placeholder="Name" required>
+            <input type="text" placeholder="Name" required>
             <input type="email" placeholder="Enter your mail" required>
             
-            <input type="" placeholder="Enter yout subject">
-            <textarea name="" id="" cols="" rows="10" placeholder="enter your message" required></textarea>
-            <input type="submit" value="sudmit" class="send"> 
+            <input type="text" placeholder="Enter your subject">
+            <textarea name="text" id="" cols="" rows="10" placeholder="enter your message" required></textarea>
+            <input type="submit" value="submit" class="send"> 
 
         </form>
     </div>
+
     </section>
 
     <div class="last-text">
         <p>Developer</p>
     </div>
-    <a href="#" class="top"><img src="img/flecha-arriba.png"></a>
-
+    <a href="#" class="top"><img src="img/flecha-arriba.png" alt="flecha"></a>
 
 
     <script src="js/main.js"></script>
