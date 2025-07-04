@@ -23,6 +23,10 @@ body {
     align-items: center;
     z-index: 100;
 }
+/* section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+} */
 
 .logo {
     position: relative;
@@ -257,6 +261,12 @@ body {
 }
 
 /* porfolio */
+#portafolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 200px;
+}
 .main-text {
     padding-top: 130px;
     margin-top: 200px;
@@ -271,7 +281,9 @@ body {
 }
 .portafolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
 }
 .row {
     position: relative;
@@ -281,6 +293,8 @@ body {
 }
 .row img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
@@ -299,7 +313,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 40px;
+    padding: 0 20px;
     transition: height 0.5s;
 }
 .layer h5 {
