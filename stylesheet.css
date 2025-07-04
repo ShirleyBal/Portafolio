@@ -182,58 +182,55 @@ body {
     margin-bottom: 4rem;
 }
 /* skills */
-#services {
+#technologies {
+    padding: 100px 10%;
+    background-color: #081b29;
     color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
 }
-.sub-title {
+
+.main-text h2 {
     text-align: center;
     font-size: 60px;
-    padding-bottom: 70px;
+    margin-bottom: 50px;
 }
-.sub-title span{
-    color: #0ef;
-}
-.container {
-    padding: 90%;
-}
+
 .services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(259px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 20px;
 }
-.services-list div{
+
+.services-list div {
     background-color: transparent;
     padding: 40px;
-    font-size: 13px;
-    /* font-weight: 13px; */
+    font-size: 14px;
     font-weight: 400;
-    border-right: 1px solid;
-    border-radius: 20px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
     box-shadow: 1px 1px 20px #012290f7,
-                1px 1px 40px #0553b8f7
+                1px 1px 40px #0553b8f7;
 }
-.services-list div i{
+
+.services-list div:hover {
+    transform: translateY(-10px);
+}
+
+.services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
+
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
-}  
-.services-list a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
 }
+
+.services-list div p {
+    margin-bottom: 20px;
+}
+
 .read {
     display: inline-block;
     padding: 12px 28px;
@@ -244,30 +241,20 @@ body {
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: 2s;
+    transition: box-shadow 0.3s ease;
     box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef
+                0 0 25px #0ef;
 }
+
 .read:hover {
     box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan;
 }
 .services-list div:hover {
     transform: translateY(-10px);
 }
-.services {
-    padding: 60px 10%;
-    text-align: center;
-}
-
-.sub-title {
-    font-size: 60px;
-    margin-bottom: 50px;
-}
-/* skills */
 
 /* porfolio */
 .main-text {
@@ -344,16 +331,16 @@ body {
 .row:hover .layer {
     height: 100%;
 }
+
 .contact {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 3rem;
-    padding-left: 30px;
-    margin-top: 130px;
+    gap: 4rem;
+    padding: 4rem;
 }
 .contact-text h2 {
-    font-size: 90px;
+    font-size: 48px;
     line-height: 1;
     text-align: center;
 }
@@ -377,16 +364,37 @@ body {
     display: block;
 }
 .contact-list li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     color: #0ef;
     font-size: 20px;
-    font-weight: 600;
+    margin-bottom: 10px;
     transition: all .40s ease;
 }
 .contact-list li a:hover {
     transform: scale(1.01) translateY(-5px);
     color: #0ef;
 }
+.contact-list li img {
+    width: 30px;
+    margin-right: 20px;
+}
+.contact-icons a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid #0ef;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.contact-icons a img:hover {
+    background-color: #0ef;
+    border-color: #0ef;
+    box-shadow: 0 0 10px #0ef;
+}
+
 .contact-icons i {
     display: inline-flex;
     justify-content: center;
@@ -410,7 +418,7 @@ body {
     color: #000;
     box-shadow: 0 0 20px #0ef;
 }
-.contact-form forms {
+.contact-form form {
     position: relative;
 }
 .contact-form form input, form textarea {
@@ -418,7 +426,7 @@ body {
     outline: none;
     width: 90%;
     padding: 18px;
-    background: #555557;
+    background: #cfcfdc;
     color: #000;
     font-size: 1rem;
     font-weight: 600;
@@ -470,7 +478,6 @@ body {
     padding: 10px;
     border-radius: 0.5rem;
 }
-
 
 @keyframes slideRight {
     0% {
